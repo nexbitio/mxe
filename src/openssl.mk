@@ -3,12 +3,12 @@
 
 PKG             := openssl
 $(PKG)_IGNORE   :=
-$(PKG)_VERSION  := 1.0.2r
-$(PKG)_CHECKSUM := ae51d08bba8a83958e894946f15303ff894d75c2b8bbd44a852b64e3fe11d0d6
+$(PKG)_VERSION  := 1.0.2d
+$(PKG)_CHECKSUM := d01d17b44663e8ffa6a33a5a30053779d9593c3d
 $(PKG)_SUBDIR   := openssl-$($(PKG)_VERSION)
 $(PKG)_FILE     := openssl-$($(PKG)_VERSION).tar.gz
-$(PKG)_URL      := http://www.openssl.org/source/old/$($(PKG)_FILE)
-$(PKG)_URL_2    := ftp://ftp.openssl.org/source/old/$($(PKG)_FILE)
+$(PKG)_URL      := http://www.openssl.org/source/$($(PKG)_FILE)
+$(PKG)_URL_2    := ftp://ftp.openssl.org/source/$($(PKG)_FILE)
 $(PKG)_DEPS     := gcc zlib libgcrypt
 
 define $(PKG)_UPDATE
